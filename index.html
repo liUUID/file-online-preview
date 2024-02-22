@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+</head>
+<body>
+    <h1>文件预览</h1>
+    <button onclick="openFileManager()">预览</button>
+</body>
+<script>
+   function openFileManager(){
+    const url = 'http://60.204.251.88:80/uploads/dc1292.pptx';
+    window.open('http://localhost:8012/onlinePreview?url='+encodeURIComponent(url));
+   }
+</script>
+</html>
